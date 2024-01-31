@@ -1,0 +1,60 @@
+@media screen and (max-width: 900px) {
+      .navbar #nav-toggle{
+            display: block;
+      }
+      .navbar ul li{
+          display: block;
+
+      }
+.know-more{
+      flex-direction: column;
+      /* height: 800px; */
+}
+.know-more .right{
+      left: 20%;
+      top: 30%;
+}
+.know-more .right button{
+      margin-left: 200px;
+}
+#footer-container .footer{
+      flex-wrap: wrap;
+}
+      
+}
+@media screen and (max-width: 700px) {
+.know-more .right{
+      left: 30%;
+}
+.know-more .right p{
+      font-size: .7rem;
+      margin-left: 200px;
+      width: 50%;
+}
+.contact .contact-us{
+      left: 30%;
+}
+.contact-us p{
+      margin-top: 30px;
+}
+.contact-us button{
+      margin-top: 120px;
+      margin-left: 100px;
+}
+
+.ingridiants{
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+}
+@media screen and (max-width: 700px) {
+      
+      .know-more .right p{
+            font-size: .7rem;
+            margin-left: 100px;
+            /* width: 30%; */
+      }
+      .know-more .right h2{
+            font-size: 1rem;
+      }
+}

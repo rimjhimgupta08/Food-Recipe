@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+
+}
+body{
+      overflow-x: hidden;
+      width: 100%;
+      height: 100%;
+
+}
+:root {
+      --swiper-theme-color: #CE1C1B;
+  }
+
+.navbar{
+      width: 100%;
+      height: 100px;
+      /* color: #FFFFFF; */
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-family: roboto;
+      /* overflow: hidden; */
+      /* position: fixed; */
+
+}
+.navbar .left{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.navbar .left img{
+      width: 80px;
+      height: 70px;
+      margin-right: 20px;
+      opacity: 1;
+}
+.navbar .left p span{
+      color: #CE1C1B;
+      font-weight: 500;
+}
+.navbar #nav-toggle{
+      font-size: 1.5rem;
+      border: 2px solid black;
+      padding: 5px;
+      cursor: pointer;
+      display: none;
+}
+.navbar ul{
+      display: inline-block;
+      /* text-align: center; */
+      position: relative;
+}
+.navbar ul li{
+      display: inline-block;
+      list-style: none;
+      position: relative;
+
+}
+.navbar ul li a{
+      text-decoration: none;
+      margin-right: 20px;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+}
+.navbar ul li a:hover{
+      color: #CE1C1B;
+      border-bottom: 2px solid #CE1C1B;
+}
+.navbar .right i{
+      margin-right: 20px;
+      cursor: pointer;
+}
+.navbar .right i:hover{
+      color: #CE1C1B;
+}
+.slider-container{
+      height: 600px;
+      width: 100%;
+}
+.swiper-wrapper{
+      height: 600px;
+      width: 100%;
+}
+.swiper-slide{
+      width: 500px ;
+      height: 600px;
+}
+.swiper-slide .bg-1{
+      background-image: url(Images/banner\ 2.png);
+      height: 550px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      position: relative;
+}
+.swiper-slide .bg-1 .content-1{
+      position: absolute;
+      top: 40%;
+      left: 60%;
+      color: #FFFFFF;
+}
+.swiper-slide .bg-1 .content-1 h5{
+      font-size: .9rem;
+
+}
+.swiper-slide .bg-1 .content-1 p{
+      margin: 10px 0px;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      text-shadow: 0px 3px 6px #000000BD;
+      font-weight: 500;
+}
+.swiper-slide .bg-1 .content-1 button, .know-more .right button{
+      width: 140px;
+      height: 40px;
+      background: #CE1C1B 0% 0% no-repeat padding-box;
+      border: none;
+      margin-top: 20px;
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 40px;
+
+}
+.swiper-slide .bg-1 .content-1 button:hover{
+      background-color: #000000;
+}
+.swiper-slide .bg-2{
+      background-image: url(Images/noo.png);
+      height: 550px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      position: relative;
+}
+.swiper-slide .bg-2 .content-2{
+      position: absolute;
+      top: 40%;
+      left: 20%;
+}
+.swiper-slide .bg-2 .content-2 h5{
+      
+      color:#CE1C1B ;
+      font-size: .9rem;
+      font-weight: 600;
+}
+.swiper-slide .bg-2 .content-2 p{
+      color: #000000;
+      font-weight: 900;
+      font-size: 1.4rem;
+      margin: 10px 0px;
+}
+.swiper-slide .bg-2 .content-2 button{
+      width: 140px;
+      height: 40px;
+      background: #000000 0% 0% no-repeat padding-box;
+      border: none;
+      margin-top: 20px;
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 40px;
+}
+.swiper-button-next ,.swiper-button-prev{
+      /* background-color: #FFFFFF; */
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      font-size: .9rem;
+      color: blue;      
+}
+.swiper-button-next{
+      margin-right: 20px;
+}
+.swiper-button-prev{
+      margin-left: 20px;
+}
+.swiper-button-next:after,.swiper-button-prev:after {
+      font-family: swiper-icons;
+      font-size: 1.2rem;
+      text-transform: none!important;
+      letter-spacing: 0;
+      font-variant: initial;
+      line-height: 1;
+      font-weight: 700;
+
+      
+  }
+  
+.more{
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+}
+.know-more{
+      background: url(Images/Group\ 16.png);
+      width: 100%;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      object-fit: cover;
+      display: flex;
+
+}
+.know-more .right{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      /* display: flex; */
+}
+.know-more .right h2{
+      margin-left: 40px;
+      text-transform: capitalize;
+      font-weight: 800;
+}
+.know-more .right h2 span{
+      color: #CE1C1B;
+}
+.know-more .right p{
+      margin: 30px 120px;
+      /* width: 350px; */
+      font-size: .9rem;
+      font-weight: 500;
+      color: #000000;
+}
+.know-more .right button{
+      margin-left: 120px;
+      text-transform: uppercase;
+}
+.know-more .right button:hover{
+      background-color: #000000;
+}
+
+/* contact section start */
+.contact{
+      background: url(Images/abt.png);
+      width: 100%;
+      height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+}
+.contact .contact-us{
+      position: absolute;
+      top: 14%;
+      left: 57%;
+
+}
+.contact .contact-us .chat{
+      display: flex;
+      margin-right: 40px;
+      /* justify-content: center; */
+      align-items: center;
+}
+.contact .contact-us .chat img{
+      width: 40px;
+}
+.contact .contact-us .chat h2{
+      margin-left: 30px;
+      font-weight: 900;
+      font-size: 1.7rem;
+}
+.contact-us .para{
+      margin-left: 70px;
+      margin-top: 20px;
+      font-size: .8rem;
+      font-weight: 500;
+      color: #000000;
+}
+.contact-us p{
+      margin-left: 70px;
+      margin-top: 50px;
+      color: #CE1C1B;
+      font-size: .9rem;
+      font-weight: 700;
+}
+
+.contact-us p i{
+      color: #212121;
+      margin-right: 30px;
+}
+.contact-us button{
+      width: 140px;
+      height: 40px;
+      border: none;
+      /* margin-top: 20px; */
+      font-weight: 700;
+      border-radius: 40px;
+      color: #CE1C1B;
+      text-transform: uppercase;
+      letter-spacing: NaNpx;
+      background-color: white;
+      margin-left: 70px;
+      margin-top: 40px;
+}
+.contact-us button:hover{
+      background-color: #CE1C1B;
+      
+      color: #FFFFFF;
+}
+/* footer section start here */
+#footer-container{
+      width: 100%;
+      height: 500px;
+      background-color: aqua;
+      background-image: url(Images/Group\ 391.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+#footer-container .footer{
+      width: 100%;
+      height: 400px;
+      display: flex;
+      
+      justify-content: space-evenly;
+      align-items: center;
+      color: #f8f5f5e8;
+      flex-wrap: wrap;
+}
+ ul li{
+      list-style: none;
+}
+#footer-container .footer .left img{
+      width: 130px;
+}
+#footer-container .footer .left p{
+      font-size: .9rem;
+      margin-top: 15px;
+      font-weight: 600;
+}
+.footer h2{
+      color: #CE1C1B;
+      font-size: 1.2rem;
+}
+.footer .account{
+      margin-bottom: 40px;
+}
+.footer .contact-us{
+      margin-bottom: 40px;
+}
+.footer .follow {
+      margin-bottom: 80px;
+}
+.footer .follow i{
+      font-size: 1.8rem;
+      margin-right: 20px;
+      margin-top: 20px;
+}
+.footer li{
+      margin-top: 20px;
+      font-size: .9rem;
+}
+.footer .contact-us i {
+      margin-right: 20px;
+      color: #CE1C1B;
+}
+#footer-container .bottom-footer{
+      color: #f8f5f5e8;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 70px;
+}
+#footer-container .bottom-footer p{
+      font-size: .9rem;
+}
+
+/* product section start here */
+.product{
+      width: 100%;
+      height: 400px;
+      background-image: url(Images/homemade-fresh-noodles-that-good-food-our-family.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+}
+.product .content{
+      position: absolute;
+      top: 40%;
+      left: 15%;
+}
+.product .content h2{
+      text-transform: uppercase;
+      font-weight: 900;
+}
+.product .content p{
+      font-size: .8rem;
+      color: #CE1C1B;
+      font-weight: 500;
+}
+.categories{
+      width: 100%;
+      display: flex;
+}
+.categories .left {
+      width: 20%;
+}
+.categories .right {
+      width: 80%;
+}
+.categories .left p{
+      margin-left: 80px;
+}
+.categories .left p{
+      font-size: .8rem;
+      font-weight: 500;
+      margin-top: 10px;
+}
+.categories .left h2{
+      margin-bottom: 20px;
+      background-color: #CE1C1B;
+      width: 300px;
+      padding: 10px;
+      text-align: center;
+      border-end-end-radius: 20px;
+      color: #f6f4f4e7;
+      text-transform: capitalize;
+      font-size: 1.3rem;
+}
+.categories .right .images{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: 80px;
+      padding: 20px;
+
+
+}
+.categories .right  .images .img1{
+      margin: 40px;
+      text-align: center;
+}
+.categories .right p{
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: .9rem;
+      font-weight: 500;
+
+}
+.categories .right p span{
+      color: #CE1C1B;
+}
+.categories .right .images .img1 h3{
+      font-size: .9rem;
+      margin: 20px;
+}
+.categories .right .images .img1 p{
+      color: #CE1C1B;
+      font-size: .9rem;
+      font-weight: 800;
+}
+.categories .right  .images .img1 img{
+      width: 100px;
+      transition: all .6s  ease-out;
+}
+.categories .right .img1 img:hover{
+      /* margin-bottom: 20px; */
+      transform: translateY(-20px);
+
+}
+.food-container{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 20px;
+      width: 100%;
+      padding: 50px;
+      flex-wrap: wrap;
+}
+.food-container .food{
+      width: 400px;
+      height: 400px;
+      margin-right: 40px;
+      text-align: center;
+}
+.food-container .food img{
+      width: 400px;
+      height: 300px;
+}
+.food-container .food p{
+      font-size: .9rem;
+      font-weight: 800;
+      margin-top: 20px;
+}
+
+/* ingrediats section start here */
+.ingridiants{
+      display: flex;
+      /* flex-wrap: wrap; */
+      
+      
+      /* padding: 20px; */
+      width: 100%;
+}
+.top{
+      color: #CE1C1B;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 50px;
+      margin-left: 80px;
+}
+.ingridiants .left{
+      width: 30%;
+      /* margin-left: 50px; */
+}
+.ingridiants .right{
+      width: 70%;
+      margin-left: 50px;
+
+}
+.ingridiants .right h2{
+      margin-top: 40px;
+      color: #000000;
+text-transform: capitalize;
+}
+.ingridiants .right p{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: .9rem;
+      color: #CD1B1B;
+text-transform: capitalize;
+font-weight: 800;
+
+}
+.ingridiants .left h2{
+      background-color: #CE1C1B;
+      width: 300px;
+      text-align: center;
+      color: #FFFFFF;
+      border-end-end-radius: 10px;
+      font-size: 1.2rem;
+      padding: 10px;
+
+}
+.ingridiants .left ul{
+      margin-left: 50px;
+      margin-top: 30px;
+      
+}
+.ingridiants .left ul li{
+      list-style:circle;
+      font-size: .9rem;
+      margin-top: 10px;
+      font-weight: 600;
+}
+.ingridiants .right li{
+      margin-right: 40px;
+      margin-top: 20px;
+      font-size: .9rem;
+      font-weight: 500;
+}
+.ingridiants .right img{
+      width: 500px;
+      height: 300px;
+}
+.ingridiants .right button{
+      margin: 80px;
+      background-color: #CE1C1B;
+      padding: 15px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+
+}
+.ingridiants .right button a{
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 600;
+
+
+}
